@@ -1,9 +1,10 @@
-import React from 'react'
+import React from "react";
 
-import { RevealMain, Slides, Section } from '../../components/Reveal'
+import { RevealMain, Slides, Section } from "../../components/Reveal";
 
-import FirstContent from './First'
-import HelloThere from './HelloThere'
+import FirstContent from "./First";
+import HelloThere from "./HelloThere";
+// import HelloThree from "./HelloThree.md";
 
 export default function PageHome() {
   return (
@@ -15,7 +16,12 @@ export default function PageHome() {
         <Section id="hello-there">
           <HelloThere />
         </Section>
+        <Section id="hello-3" data-markdown>
+          <section>
+            <textarea data-template>{/* <HelloThree /> */}</textarea>
+          </section>
+        </Section>
       </Slides>
     </RevealMain>
-  )
+  );
 }
